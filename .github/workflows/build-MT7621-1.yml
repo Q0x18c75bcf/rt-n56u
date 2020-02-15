@@ -48,8 +48,8 @@ jobs:
         sudo ./clear_tree_simple
         sudo ./build_firmware_bkye K2P_nano-5.0
         sudo mv -f images/*.trx /opt/images/
-    - name : upload
-        uses: actions/upload-artifact@master
-        with:
-          name: Padavan
-          path: /opt/images
+    - name : Upload
+      uses: actions/upload-artifact@master
+      with:
+        name: Padavan
+        path: /opt/images
