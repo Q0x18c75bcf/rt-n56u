@@ -38,7 +38,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        CONFIG_FILE: 'K2P-5.0.config'
+        CONFIG_FILE: 'K2P_nano-5.0.config'
       run: |
         cwd=`pwd`
         CONFIG_TOOLCHAIN_DIR=${cwd//\//\\\/}\\/toolchain-mipsel
